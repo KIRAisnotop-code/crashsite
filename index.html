@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browser Crash Page</title>
+</head>
+<body>
+    <h1>Browser Crashing Code</h1>
+    <p>This page contains code designed to put an immense strain on the browser's resources, causing it to freeze or crash.</p>
+    <button onclick="startCrash()">Run Code</button>
+
+    <script>
+        function startCrash() {
+            // This function triggers the resource-heavy process.
+
+            // Use a while(1) or while(true) loop for a true infinite loop.
+            // Modern browsers may detect and stop simple infinite loops, so we add a resource-intensive task.
+            while (true) {
+                // Consume memory by repeatedly creating and concatenating a large string.
+                var crashString = "a";
+                while (1) {
+                    crashString += "a";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
